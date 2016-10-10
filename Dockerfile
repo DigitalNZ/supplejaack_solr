@@ -21,3 +21,5 @@ USER solr
 EXPOSE 8983
 WORKDIR /opt/solr/example
 COPY conf/* /opt/solr/example/solr/collection1/conf/
+
+CMD ["java", "-jar", "start.jar"]
